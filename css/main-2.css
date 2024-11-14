@@ -1,0 +1,200 @@
+@charset "utf-8";
+/* CSS Document */
+.box-1{
+}
+
+.box-2
+{
+	background: #E9E9E9
+}
+
+.Portfolio {
+    position: relative;
+    margin: 5px;
+    border: 2px solid black;
+    float: left;
+    width: 180px;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+    animation: winanim 0.5s ;
+-webkit-backface-visibility:visible;
+    backface-visibility:visible;
+    box-shadow:0 3px 5px -1px rgba(0,0,0,.2),0 5px 8px 0 rgba(0,0,0,.14),0 1px 14px 0 rgba(0,0,0,.12)
+}
+
+.Portfolio:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+
+.Portfolio img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px
+}
+
+.desc {
+    padding: 5px;
+    text-align: center;
+    font-size: 90%;
+    background:black;
+    color:hotpink;
+	margin: auto
+}
+
+.nav {
+    padding:20px;
+    margin-left:25%;
+    margin-top:-30px;
+}
+
+.nav li a { 
+    margin:10px;
+    padding: 15px 30px; 
+    font-size:16px; 
+    color:hotpink; 
+    background: #000;
+    transition-duration: 0.4s;
+}
+.nav a:hover { 
+    background:#333; 
+}
+.nav .active { 
+    background-color:hotpink !important;
+    color:#fff;
+}
+
+@keyframes winanim {
+    0%{opacity:0;transform:scale3d(.3,.3,.3)}
+    50%{opacity:1}
+    
+}
+
+.background-color
+{
+	background-image: url("file:///C:/Users/Admin/Desktop/porforlio%20(1)/images/smooth-stucco-wall.png")
+}
+
+
+
+
+.filters {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  margin: 2px 5px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 10px	
+}
+
+.filter-btn:hover {
+  background-color: #555;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.1);
+}
+
+
+/*............................*/
+
+.btn-orange{background: orange;
+border-radius: 10px
+}
+
+.text-cam{color:orange}
+
+.content {
+  padding: 20px;
+  margin-left: 50px; /* Đảm bảo nội dung không bị che bởi sidebar */
+  margin-right: 50px; /* Nếu bạn muốn có khoảng cách cho nội dung bên phải */
+}
+
+/* Thanh sidebar dính bên hông trái hoặc phải */
+.sidebar {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%); /* Đặt vị trí ngang giữa của trang */
+  right: 0; /* Hoặc đổi thành right: 0; để gắn bên phải */
+  width: 50px;
+  background-color: orange;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Kiểu cho các biểu tượng */
+.social-icon {
+  display: block;
+  margin: 10px 0;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  transition: color 0.3s, transform 0.3s; /* Thêm hiệu ứng chuyển màu và phóng to */
+}
+
+.social-icon:hover {
+  color: #104763 ; /* Màu khi hover */
+  transform: scale(1.2); /* Tăng kích thước khi hover */
+}
+
+/* Thêm hiệu ứng hover vào các biểu tượng */
+.social-icon i {
+  transition: transform 0.3s;
+}
+
+.social-icon:hover i {
+  transform: scale(1.2); /* Tăng kích thước biểu tượng khi hover */
+}
+
+
+.mau-nen
+{
+	background-color: #1F1F1F
+}
+.shadow-khung
+{
+	box-shadow: 1px 1px 10px 3px gray
+}
+
+.fa-4x
+{
+ 
+  font-size: 3.5em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em; 
+}
+
+.btn-rong
+{
+	background: transparent;
+	border: 1px solid orange
+}
+
